@@ -18,35 +18,35 @@ Cada imposto deve ser calculado de acordo com a seguinte regra:
 - IPI: Livro ou CD a líquota é 0% e para os demais produtos é 8%
 
 Execução com 2 produtos distintos, de estados diferentes e mesmo valor de produção e venda.
-´´´
+```
 public static void main(String[] args) 
-	{
-		System.out.println("Inicializando calculo de tributos \n");
-		// LIVRO
-		Produto pd = new Produto();
-		pd.setDescricao("Livro de Ingles");
-		pd.setPrecoProducao(100);
-		pd.setPrecoVenda(1000);
-		pd.setTpproduto(TipoProduto.Livro);
-		System.out.println("Produto: " + pd.getDescricao());
-		// --------------------------------------------
-		CalcularImpostosFacade cf = new CalcularImpostosFacade();
-		cf.setProduto(pd);
-		cf.setEstado(Estado.SC);
-		cf.CalcularImpostos();
+{
+	System.out.println("Inicializando calculo de tributos \n");
+	// LIVRO
+	Produto pd = new Produto();
+	pd.setDescricao("Livro de Ingles");
+	pd.setPrecoProducao(100);
+	pd.setPrecoVenda(1000);
+	pd.setTpproduto(TipoProduto.Livro);
+	System.out.println("Produto: " + pd.getDescricao());
+	// --------------------------------------------
+	CalcularImpostosFacade cf = new CalcularImpostosFacade();
+	cf.setProduto(pd);
+	cf.setEstado(Estado.SC);
+	cf.CalcularImpostos();
 
-		// DVD
-		System.out.println("\n------------------------------------------\n");
-		pd.setDescricao("DVD Beatles");
-		pd.setPrecoProducao(100);
-		pd.setPrecoVenda(1000);
-		pd.setTpproduto(TipoProduto.DVD);
-		System.out.println("Produto: " + pd.getDescricao());
-		// --------------------------------------------		
-		cf.setProduto(pd);
-		cf.setEstado(Estado.MT);
-		cf.CalcularImpostos();
-	}
+	// DVD
+	System.out.println("\n------------------------------------------\n");
+	pd.setDescricao("DVD Beatles");
+	pd.setPrecoProducao(100);
+	pd.setPrecoVenda(1000);
+	pd.setTpproduto(TipoProduto.DVD);
+	System.out.println("Produto: " + pd.getDescricao());
+	// --------------------------------------------		
+	cf.setProduto(pd);
+	cf.setEstado(Estado.MT);
+	cf.CalcularImpostos();
+}
 ´´´
 
 Execução e resultado 
