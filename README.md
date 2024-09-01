@@ -4,7 +4,7 @@ Esse projeto demonstra o uso do Design Patterns FACADE utilizando java puro.
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
-# Requisitos:
+# Requisitos
 Cada imposto deve ser calculado de acordo com a seguinte regra:
 
 - ICMS:
@@ -17,7 +17,7 @@ Cada imposto deve ser calculado de acordo com a seguinte regra:
 - IOF: 2,5% sobre o valor de venda do produto
 - IPI: Livro ou CD a líquota é 0% e para os demais produtos é 8%
 
-
+<hr>
 
 Execução com 2 produtos distintos, de estados diferentes e mesmo valor de produção e venda.
 
