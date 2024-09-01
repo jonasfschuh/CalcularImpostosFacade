@@ -17,8 +17,11 @@ Cada imposto deve ser calculado de acordo com a seguinte regra:
 - IOF: 2,5% sobre o valor de venda do produto
 - IPI: Livro ou CD a líquota é 0% e para os demais produtos é 8%
 
+
+
 Execução com 2 produtos distintos, de estados diferentes e mesmo valor de produção e venda.
-```
+
+```java
 public static void main(String[] args) 
 {
 	System.out.println("Inicializando calculo de tributos \n");
@@ -47,7 +50,8 @@ public static void main(String[] args)
 	cf.setEstado(Estado.MT);
 	cf.CalcularImpostos();
 }
-´´´
+```
+
 
 Execução e resultado 
 ```
